@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Montserrat.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #FF6060;
+$color-2: #666666;
+$color-3: #000;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-weight:500;
+  font-size:14px;
+  line-height:19.96px;
+  width:95%;
+  max-width: 1440px;
+  display: block;
+  margin: auto;
+  font-family: "font-1";
+}
+
+li {
+  list-style-type: none;
+}

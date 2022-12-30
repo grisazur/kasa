@@ -1,0 +1,34 @@
+.footer {
+    background-color: $color-3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+
+    @media screen and (max-width: 768px) {
+        height: 100px;
+    }
+
+    p {
+        margin: 0.5em;
+        color: white;
+        font-size:1.5em;
+
+        @media screen and (max-width: 768px) {
+            font-size:1em;
+          }
+    }
+}
+
+.footer-logo {
+    margin:0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+    img {
+        width:15%;
+    }
+}
