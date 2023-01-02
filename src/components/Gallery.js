@@ -3,12 +3,12 @@ import Card from '../components/Card'
 import { Link } from 'react-router-dom'
 import data from '../datas/logements.json'
 
-function Gallery() {
+const Gallery = () => {
     return (
-        <div className="gallery">
+        <div className='gallery'>
 			{data.map((logement, id) => (
-				<div className="card" key={id}>
-					<Link className="card-link" to={`/logement/${logement.id}`}>
+				<div className='card' key={id}>
+					<Link className='card__link' to={`/logement/${logement.id}`}>
 						<Card cover={logement.cover} title={logement.title} />
 					</Link>
 				</div>

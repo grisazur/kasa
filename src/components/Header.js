@@ -6,7 +6,7 @@ import Img from '../assets/LOGO-header.svg'
 const Header = () => {
     return (
         <div className='header'>
-            <img className='header-logo' src={Img} alt='logo Kasa'></img>
+            <img className='header__logo' src={Img} alt='logo Kasa'></img>
             <ul>
                 <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
                     <li>Accueil</li>

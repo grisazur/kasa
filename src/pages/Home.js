@@ -10,9 +10,9 @@ const Home = () => {
     <div>
       <Header />
       <div className='bannier'>
-          <section className='bannier-section'>
-            <img className='bannier-img' src={Img} alt='photo paysage'></img>
-            <div className='bannier-img-overlay'>
+          <section className='bannier__section'>
+            <img className='bannier__img' src={Img} alt='photo paysage'></img>
+            <div className='bannier__img-overlay'>
                 <p>Chez vous, partout et ailleurs</p>
             </div>
           </section>
@@ -21,7 +21,6 @@ const Home = () => {
       <Footer />
     </div>
   )
-
 }
 
 export default Home
