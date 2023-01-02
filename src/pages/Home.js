@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Gallery from '../components/Gallery'
-import Img from '../assets/IMG-home.png'
+import Img from '../assets/images/IMG-home.png'
 
 
 const Home = () => {
