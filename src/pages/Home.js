@@ -9,13 +9,13 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className='home'>
-        <section className='home-section'>
-          <img className='home-img' src={Img} alt='photo paysage'></img>
-          <div className='home-img-overlay'>
-            <p>Chez vous, partout et ailleurs</p>
-          </div>
-        </section>
+      <div className='bannier'>
+          <section className='bannier-section'>
+            <img className='bannier-img' src={Img} alt='photo paysage'></img>
+            <div className='bannier-img-overlay'>
+                <p>Chez vous, partout et ailleurs</p>
+            </div>
+          </section>
       </div>
       <Gallery />
       <Footer />
