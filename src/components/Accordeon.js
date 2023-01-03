@@ -8,10 +8,11 @@ const Accordeon = ({ title, content }) => {
     
     const handleToggle = () => {
         setActive(!active)
-    } // on active le toggle si la classe est différente de false
+    } // on active le toggle si la classe est différente de false (fermée), donc true
     
     return (
-        <div className={`accordeon ${active && 'active'}`}>
+        // on met une condition : si la condition vaut true, l’élément juste après && sera affiché (la classe active)
+        <div className={`accordeon ${active && 'active'}`}> 
             <div className='accordeon__title' onClick={handleToggle}>
                 <h1>{title}</h1> 
                <img className='accordeon__arrow' src={ImgDown} alt='flêche bas'></img> 
