@@ -1,11 +1,20 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import Header from '../components/Header'
+import Carrousel from '../components/Carrousel'
+import Footer from '../components/Footer'
 
 const Logement = () => {
+
+  const params = useParams ();
+
+
   return (
     <div>
       <Header />
-      <h1>Logement</h1>
+      <Carrousel />
+      <div>Infos logement : {JSON.stringify(params)}</div>
+      <Footer />
     </div>
   )
 }
