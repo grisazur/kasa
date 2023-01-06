@@ -1,6 +1,6 @@
-import React from 'react';
-import starFull from '../assets/images/star-full.svg';
-import starEmpty from '../assets/images/star.svg';
+import React from 'react'
+import starFull from '../assets/images/star-full.svg'
+import starEmpty from '../assets/images/star.svg'
 
 const Rating = ({ rateValue, rateType }) => {
     {/* On déclare le tableau d'étoiles, de 0 à 5 */}
@@ -8,11 +8,11 @@ const Rating = ({ rateValue, rateType }) => {
 
     return (
         <div className='rating__items'>
-            {range.map((rangeElem, key) =>
+            {range.map((rangeElem, id) =>
                 rateValue >= rangeElem ? (
-                    <img src={starFull} alt='rating positif' key={key} />
+                    <img src={starFull} alt='rating positif' key={id} />
                 ) : (
-                    <img src={starEmpty} alt='rating négatif' key={key}/>
+                    <img src={starEmpty} alt='rating négatif' key={id}/>
                 )
             )}
         </div>

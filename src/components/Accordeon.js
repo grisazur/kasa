@@ -3,7 +3,7 @@ import { useState } from 'react'
 import ImgDown from '../assets/images/arrow.svg'
 
 
-const Accordeon = ({ title, content }) => {
+const Accordeon = ({ title, content, contentArray }) => {
     const [active, setActive] = useState(false); // on initie l'accordéon en le mettant en position fermée par défaut 
     
     const handleToggle = () => {

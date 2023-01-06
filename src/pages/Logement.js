@@ -29,8 +29,8 @@ const Logement = () => {
         </div>
       </section>
       <section className='tags'>
-        {appart.tags.map((tag, key) => (
-          <div className='tag' key={key}>
+        {appart.tags.map((tag, id) => (
+          <div className='tag' key={id}>
              {tag}
           </div>
         ))}
