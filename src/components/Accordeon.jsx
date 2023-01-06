@@ -14,7 +14,7 @@ const Accordeon = ({ title, content, contentArray }) => {
         <div className='accordeon__container'>
             <div className='accordeon__header'>
                 <p className='accordeon__header__title' key='id'>{title}</p> 
-                <img className='accordeon__arrow' 
+                <img className='accordeon__header__arrow' 
                     src={ImgTop} 
                     alt='flêche haut' 
                     onClick={() => setIsActive(false)}>
@@ -29,14 +29,16 @@ const Accordeon = ({ title, content, contentArray }) => {
                     ))}
                 </div>
                 ) : (
-                    <p className='accordeon__content__txt'>{content}</p>
+                    <p className='accordeon__content__txt'>
+                        {content}
+                    </p>
                 )}
         </div>
         ) : (
         <div className='accordeon__container'> 
             <div className='accordeon__header'>
                 <p className='accordeon__header__title' key='id'>{title}</p> 
-                <img className='accordeon__arrow' 
+                <img className='accordeon__header__arrow' 
                     src={ImgDown} 
                     alt='flêche bas' 
                     onClick={() => setIsActive(true)}>
