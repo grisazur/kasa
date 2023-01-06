@@ -31,7 +31,7 @@
         }
       }
   
-      .nav-active {
+      a:hover, .nav-active {
         position: relative;
   
         &::after {
