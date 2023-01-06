@@ -12,7 +12,7 @@ const Rating = ({ rateValue, rateType }) => {
                 rateValue >= rangeElem ? (
                     <img src={starFull} alt='rating positif' key={key} />
                 ) : (
-                    <img src={starEmpty} alt='rating négatif' />
+                    <img src={starEmpty} alt='rating négatif' key={key}/>
                 )
             )}
         </div>
