@@ -1,5 +1,4 @@
 import React from 'react'
-import '../datas/logements.json'
 
 
 const Card = ({ cover, title }) => {
@@ -7,7 +6,7 @@ const Card = ({ cover, title }) => {
         <article className='card__item'>
             <img src={cover} alt="photo logement" />
             <div className='card__item__title'>
-                 <p>{title}</p>
+                <p>{title}</p>
             </div>
         </article>
     )
