@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <Route />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

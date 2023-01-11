@@ -10,9 +10,11 @@ import Footer from './components/Footer';
 const Routeur = () => {
     return (
       <div>
+          {/* BrowserRouter est recommandé car il utilise le History API inclus dans HTML5 pour surveiller l’historique de navigation */}
           <BrowserRouter>
             <Header />
             <Routes>
+              {/* on utilise "exact" afin de dire que ce <Route> ne fonctionnne que si l'URL correspond absolument à la valeur de son attribut path */}
               <Route exact path='/' element={<Home />} />
               <Route exact path='/about' element={<About />} />
               <Route exact path='/logement/:id' element={<Logement />} />

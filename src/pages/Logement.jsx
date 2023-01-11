@@ -9,28 +9,27 @@ import Carrousel from '../components/Carrousel'
 const Logement = () => {
 
   {/*  On récupère l'id en paramètre URL, avec {id} entre accolades sinon reconnu en tant qu'objet */}
-  const { id } = useParams();
+  const { id } = useParams()
 
   {/* on utilise le hook useNavigate pour rediriger vers la page Error si l'id n'est pas dans le fichier json */}
-  const navigate = useNavigate();
-  {/* on utilise le hook useEffect à la racine du coposant  */}
+  const navigate = useNavigate()
+  {/* on utilise le hook useEffect à la racine du composant  */}
   useEffect(() => {
-    {/* on utilise la méthode .find pour chercher le logement avec son id dans le fichier json */}
+    {/* on utilise la méthode find pour chercher le logement avec son id dans le fichier json */}
     let appart = Logements.find((app) => app.id === id);
     if (!appart) {
-       navigate("/Error");
+       navigate("/Error")
     }
-  },[]);
+  },[])
 
   
 	const appart = Logements.find((app) => app.id === id); 
+  
   {/* on utilise la destructuration d'objet JS pour créer les constantes et les valeurs associées */}
 	if (appart !== undefined) { 
-		const {title, pictures} = appart;
+		const {title, pictures} = appart
   
-    
-  return (
-        
+    return (
       <div key={appart.id} className='logement__container'>
 
         <Carrousel id={id} pictures={pictures} title={title} />
@@ -41,7 +40,7 @@ const Logement = () => {
             <h3>{appart.location}</h3>
             <div className='tags'>
               {appart.tags.map((tag, id) => (
-                <div className='tag' key={id}>{tag}</div>
+                <div className='tag' key={id}> {tag} </div>
               ))}
             </div>
           </div>
@@ -55,19 +54,18 @@ const Logement = () => {
             </div>
           </div>
         </section>
-          
+                
         <section className='logement__body'>
           <div className='logement__description'>
             <Accordeon title='Description' content={appart.description} />
           </div>
           <div className='logement__equipment'>
-            <Accordeon title='Equipements' contentArray={appart.equipments}/>
+            <Accordeon title='Equipements' contentArray={appart.equipments} />
           </div>
         </section> 
 
       </div>
-  )} else {
-    
+    )
   }
 }
   

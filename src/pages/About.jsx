@@ -8,7 +8,7 @@ const About = () => {
     <div className='about'>
       <div className='bannier'>
           <section className='bannier__section'>
-            <img className='bannier__img' src={Img} alt='photo paysage'></img>
+            <img className='bannier__img' src={Img} alt='photo paysage'/>
             <div className='bannier__img-overlay'></div>
           </section>
       </div>
@@ -19,7 +19,7 @@ const About = () => {
         <Accordeon title='Sécurité' content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."/>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default About

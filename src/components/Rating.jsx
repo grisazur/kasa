@@ -3,7 +3,7 @@ import starFull from '../assets/images/star-full.svg'
 import starEmpty from '../assets/images/star.svg'
 
 const Rating = ({ rateValue, rateType }) => {
-    {/* On déclare le tableau d'étoiles, de 0 à 5 */}
+    {/* On déclare le tableau d'étoiles, de 1 à 5 */}
     const range = [1, 2, 3, 4, 5]
 
     return (

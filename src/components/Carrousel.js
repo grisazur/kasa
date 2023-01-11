@@ -11,15 +11,15 @@ const Carrousel = ({ id, title, pictures }) => {
 	const prevSlide = () => {
 		setCurrentImg (
 			currentImg === 0 ? pictures.length - 1 : currentImg - 1
-		); 
-	};
+		) 
+	}
 
     {/* Flèche next : Si la currentImg est la dernière du slider, on repasse à 0 (position initiale), sinon on va à l'image suivante */}
 	const nextSlide = () => {
 		setCurrentImg ( 
             currentImg === pictures.length - 1 ? 0 : currentImg + 1
-		);
-	};
+		)
+	}
 
 	return (
 		<section className='slider__container'>
@@ -46,8 +46,8 @@ const Carrousel = ({ id, title, pictures }) => {
                 {currentImg +1} / {pictures.length} 
             </span>
 		</section>
-	);
-};
+	)
+}
 
 
 export default Carrousel
