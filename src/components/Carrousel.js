@@ -25,7 +25,7 @@ const Carrousel = ({ id, title, pictures }) => {
 		<section className='slider__container'>
 
 			{pictures.map((picture, index) => (
-				<div key={id + index}>
+				<div key={id + index} className='slider__item'>
 					{index === currentImg && (
 						<img src={picture} alt={title} className='slider__image' />
 					)}
