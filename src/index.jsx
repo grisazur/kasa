@@ -10,4 +10,4 @@ root.render(
   </React.StrictMode>
 );
 
-{/* on utilise StrictMode sur App pour détecter les problèmes potentiels, notamment des composants à cycles de vie dépréciés */}
+{/* on utilise StrictMode pour détecter les problèmes potentiels, notamment des composants à cycles de vie dépréciés */}
