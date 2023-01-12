@@ -1,6 +1,6 @@
 import React from 'react';
+import Img from '../assets/images/IMG-home.png'
 import Gallery from '../components/Gallery';
-import Img from '../assets/images/IMG-home.png';
 
 
 const Home = () => {
