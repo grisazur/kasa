@@ -4,7 +4,6 @@
     margin:0 auto 2em auto;
     justify-content:center;
     flex-direction:column;
-    
 
     @media screen and (max-width: 768px) {
         width:100%;
@@ -65,15 +64,15 @@
     padding: 1.2em 1em 1em 1em;
     border-radius: 0 0 5px 5px;
     margin : 0;
-    height:100%;
     font-size:1.2em;
     line-height:1.4em;
-  
+    
     @media screen and (max-width: 768px) {
         font-size:1em;
     }
 }
 
+  
 .accordeon__content__array {
     padding: 1em 1em 0 1em;
 }
