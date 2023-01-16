@@ -41,10 +41,12 @@ const Carrousel = ({ id, title, pictures }) => {
 				<img src={Next} alt='flèche next' className='slider__next' onClick={nextSlide} />
 			)}
 
-            {/* On affiche le numéro de l'image courante ainsi que le nombre total d'images */}
-            <span className='slider__number'>
-                {currentImg +1} / {pictures.length} 
-            </span>
+            {/* On affiche le numéro de l'image courante ainsi que le nombre total d'images si le tableau pictures contient plus d'une image */}
+			{pictures.length > 1 && (
+				<span className='slider__number'>
+					{currentImg +1} / {pictures.length}
+				</span>
+			)}
 		</section>
 	)
 }
