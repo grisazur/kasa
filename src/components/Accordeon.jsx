@@ -10,7 +10,7 @@ const Accordeon = ({ title, content, contentArray }) => {
     {/* on initie l'accordéon en le mettant en position fermée par défaut */}
     const [isActive, setIsActive] = useState(false);  
     
-    {/* si la condition isActive est true = accordéon affiche content et flêche vers le haut, si isActive est false = accordéon fermé (puisque initialisé sur false) */}
+    {/* si la condition isActive est true = accordéon affiche content et flèche vers le haut, si isActive est false = accordéon fermé (puisque initialisé sur false) */}
     return isActive ? (
 
         <div className='accordeon__container'>
