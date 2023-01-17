@@ -21,10 +21,10 @@ body {
   font-weight:500;
   font-size:14px;
   line-height:19.96px;
-  width:98%;
+  width:90%;
   max-width: 1440px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   font-family: "font-1";
   height:100%;
 }
@@ -101,7 +101,7 @@ section {
       }
   
       @media screen and (max-width: 768px) {
-          font-size:1.8em;
+          font-size:1.6em;
           line-height:1.4em;
           text-align:left;
           width:65%;
